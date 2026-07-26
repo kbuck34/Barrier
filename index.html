@@ -124,11 +124,12 @@
   }
   .nav-logo img { height: auto; width: 300px; max-width: 70vw; transition: width .3s; }
   nav.scrolled .nav-logo img { width: 180px; max-width: 50vw; }
-  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+  .nav-links > li { display: flex; flex-direction: column; justify-content: center; }
   .nav-links a {
     font-size: .72rem; font-weight: 500; letter-spacing: .18em;
     text-transform: uppercase; color: rgba(255,255,255,.82);
-    text-decoration: none; transition: color .2s;
+    text-decoration: none; transition: color .2s; line-height: 1;
   }
   .nav-links a:hover { color: var(--brass-lt); }
   .nav-cta {
@@ -143,6 +144,7 @@
     background: none; border: none; cursor: pointer; padding: 0;
     font-family: inherit; font-size: .72rem; font-weight: 500; letter-spacing: .18em;
     text-transform: uppercase; color: rgba(255,255,255,.82); display: flex; align-items: center; gap: 6px;
+    line-height: 1;
   }
   .contact-toggle:hover { color: var(--brass-lt); }
   .contact-toggle .caret { font-size: .6rem; transition: transform .25s; }
