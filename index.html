@@ -6,8 +6,8 @@
 
 <!-- Primary SEO -->
 <title>Barrier Island Exterior Cleaning | Soft Wash House Washing · Charleston · Kiawah · Seabrook · Lowcountry SC</title>
-<meta name="description" content="Premium soft-wash exterior cleaning serving Charleston, Kiawah Island, Seabrook Island, Johns Island, James Island, Folly Beach, Mount Pleasant, Edisto Island and the entire South Carolina Lowcountry. House washing, driveway cleaning, window cleaning, and gutter cleaning. Licensed & insured. Free quotes." />
-<meta name="keywords" content="exterior cleaning Charleston SC, house washing Kiawah Island, soft wash Seabrook Island, pressure washing Lowcountry SC, exterior cleaning Johns Island, house washing Charleston, driveway cleaning Charleston SC, window cleaning Kiawah Island, gutter cleaning Seabrook Island, soft wash Charleston, exterior cleaning James Island, house washing Folly Beach, exterior cleaning Mount Pleasant SC, soft wash Johns Island, mold removal house siding Charleston, algae removal Kiawah, black stains siding Lowcountry, exterior cleaning Edisto Island, pressure washing Johns Island SC, best exterior cleaning Charleston SC, licensed insured exterior cleaning Charleston, Lowcountry home cleaning, Charleston coastal home cleaning, barrier island exterior cleaning, soft wash specialist Lowcountry, exterior cleaning near me Charleston, house washing near me Kiawah, exterior home cleaning South Carolina, Charleston SC pressure washing, Lowcountry pressure washing, exterior cleaning company Charleston, residential exterior cleaning Charleston SC, soft wash house washing South Carolina, gutter cleaning Charleston SC, window cleaning Charleston SC, driveway cleaning Kiawah Island, exterior cleaning Wadmalaw Island, home washing service Lowcountry, coastal home exterior cleaning SC" />
+<meta name="description" content="Premium soft-wash exterior cleaning serving Charleston, Kiawah Island, Seabrook Island, Johns Island, James Island, Folly Beach, Mount Pleasant, Edisto Island and the entire South Carolina Lowcountry. House washing, driveway cleaning, fence cleaning, and gutter cleaning. Licensed & insured. Free quotes." />
+<meta name="keywords" content="exterior cleaning Charleston SC, house washing Kiawah Island, soft wash Seabrook Island, pressure washing Lowcountry SC, exterior cleaning Johns Island, house washing Charleston, driveway cleaning Charleston SC, fence cleaning Kiawah Island, gutter cleaning Seabrook Island, soft wash Charleston, exterior cleaning James Island, house washing Folly Beach, exterior cleaning Mount Pleasant SC, soft wash Johns Island, mold removal house siding Charleston, algae removal Kiawah, black stains siding Lowcountry, exterior cleaning Edisto Island, pressure washing Johns Island SC, best exterior cleaning Charleston SC, licensed insured exterior cleaning Charleston, Lowcountry home cleaning, Charleston coastal home cleaning, barrier island exterior cleaning, soft wash specialist Lowcountry, exterior cleaning near me Charleston, house washing near me Kiawah, exterior home cleaning South Carolina, Charleston SC pressure washing, Lowcountry pressure washing, exterior cleaning company Charleston, residential exterior cleaning Charleston SC, soft wash house washing South Carolina, gutter cleaning Charleston SC, fence cleaning Charleston SC, driveway cleaning Kiawah Island, exterior cleaning Wadmalaw Island, home washing service Lowcountry, coastal home exterior cleaning SC" />
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Barrier Island Exterior Cleaning" />
 <link rel="canonical" href="https://kbuck34.github.io/Barrier/" />
@@ -63,7 +63,6 @@
     "House Washing",
     "Soft Wash Exterior Cleaning",
     "Driveway Cleaning",
-    "Window Cleaning",
     "Gutter Cleaning",
     "Fence Cleaning",
     "Pressure Washing",
@@ -219,6 +218,11 @@
     max-width: 480px; margin-bottom: 2.8rem; line-height: 1.75;
     letter-spacing: .01em;
   }
+  .hero-license {
+    font-size: .72rem; font-weight: 400; letter-spacing: .05em;
+    color: rgba(255,255,255,.5);
+    margin-top: -1.8rem; margin-bottom: 2.2rem;
+  }
   .hero-actions { display: flex; gap: 1.2rem; flex-wrap: wrap; }
   .btn-primary {
     display: inline-block; padding: 15px 36px;
@@ -321,6 +325,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2px;
+    align-items: start;
   }
   .service-card {
     background: var(--white);
@@ -494,8 +499,11 @@
   #quote {
     background: var(--navy);
     display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+    grid-template-areas: "left form" "contact form";
     align-items: start;
   }
+  .quote-left { grid-area: left; }
+  .quote-form-wrap { grid-area: form; }
   #quote .section-eyebrow { color: var(--brass-lt); }
   #quote .section-eyebrow::before { background: var(--brass-lt); }
   #quote h2 { color: var(--white); }
@@ -598,13 +606,19 @@
     nav { padding: 18px 5%; }
     .nav-links { display: none; }
     .hamburger { display: flex; }
+    .hero-scroll { display: none; }
+    #hero { height: auto; min-height: 100vh; overflow: visible; padding: 140px 0 60px; }
+    .hero-content { margin-top: 0; }
 
     #about, #process, #quote, .areas-layout {
       grid-template-columns: 1fr;
     }
     #about { gap: 48px; }
     #process { gap: 48px; }
-    #quote { gap: 48px; }
+    #quote {
+      gap: 48px;
+      grid-template-areas: "left" "form" "contact";
+    }
     .areas-layout { gap: 40px; }
     .form-row { grid-template-columns: 1fr; }
     #gallery { height: 240px; }
@@ -659,6 +673,7 @@
     <p class="hero-eyebrow">Kiawah · Seabrook · Charleston · Lowcountry</p>
     <h1>The Coastal Standard<br>for <em>Pristine</em> Exteriors</h1>
     <p class="hero-sub">White-glove exterior cleaning for the Lowcountry's most discerning homeowners. Soft-wash technology that protects your investment — delivered with the precision of a resort service.</p>
+    <p class="hero-license">Licensed &amp; Insured in South Carolina</p>
     <div class="hero-actions">
       <a href="#quote" class="btn-primary">Request a Quote</a>
       <a href="#services" class="btn-ghost">Explore Services</a>
@@ -725,19 +740,6 @@
         <li>Oil & rust stain treatment</li>
         <li>Algae & mildew elimination</li>
         <li>Walkways & pool decks included</li>
-        <li>Sealing services available</li>
-      </ul>
-    </div>
-    <div class="service-card">
-      <span class="service-icon">✨</span>
-      <h3>Window Cleaning</h3>
-      <p>Crystal-clear windows restore your Lowcountry views. Our purified water system leaves zero streaks, spots, or residue — inside, outside, or both.</p>
-      <ul class="service-detail">
-        <li>Purified water-fed pole system</li>
-        <li>Interior & exterior available</li>
-        <li>Screen cleaning & reinstallation</li>
-        <li>Track & frame detail cleaning</li>
-        <li>Hard water stain treatment</li>
       </ul>
     </div>
     <div class="service-card">
@@ -759,8 +761,6 @@
       <ul class="service-detail">
         <li>Full debris removal & haul-away</li>
         <li>Downspout flush & check</li>
-        <li>Gutter brightening available</li>
-        <li>Before & after photos provided</li>
         <li>Seasonal maintenance programs</li>
       </ul>
     </div>
@@ -816,14 +816,6 @@
   <div class="gallery-panel">
     <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&auto=format&fit=crop&q=75" alt="Clean Lowcountry home exterior" />
     <span class="gallery-label">Driveway Cleaning</span>
-  </div>
-  <div class="gallery-panel">
-    <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&auto=format&fit=crop&q=75" alt="Exterior home detail" />
-    <span class="gallery-label">Window Cleaning</span>
-  </div>
-  <div class="gallery-panel">
-    <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&auto=format&fit=crop&q=75" alt="Home exterior cleaning" />
-    <span class="gallery-label">Gutter Cleaning</span>
   </div>
   <div class="gallery-panel">
     <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=75" alt="Fence cleaning results" />
@@ -1008,10 +1000,10 @@
     </div>
     <div class="testimonial-card">
       <div class="stars">★★★★★</div>
-      <blockquote>"The windows on our Charleston single house haven't been this clear in years. Zero streaks, zero mess. They wrapped the job in half the time I expected and charged exactly what they quoted."</blockquote>
+      <blockquote>"The gutters on our Charleston single house haven't looked this good in years. Zero mess left behind. They wrapped the job in half the time I expected and charged exactly what they quoted."</blockquote>
       <div class="testimonial-author">
         <strong>Elizabeth M.</strong>
-        <span>Historic Charleston, SC · Window & Gutter Cleaning</span>
+        <span>Historic Charleston, SC · Gutter Cleaning</span>
       </div>
     </div>
     <div class="testimonial-card">
@@ -1107,36 +1099,6 @@
     <h2>Request Your<br><em>Complimentary</em> Quote</h2>
     <div class="brass-rule"></div>
     <p class="section-lead">Tell us about your property and we'll respond within one business day with a transparent, itemized estimate. No obligation, no pressure.</p>
-    <div class="quote-contact">
-      <div class="contact-item">
-        <div class="contact-icon">📞</div>
-        <div>
-          <span class="contact-label">Phone</span>
-          <a href="tel:+18435801999" class="contact-value">(843) 580-1999</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">💬</div>
-        <div>
-          <span class="contact-label">Text</span>
-          <a href="sms:+18435801999" class="contact-value">(843) 580-1999</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">✉️</div>
-        <div>
-          <span class="contact-label">Email</span>
-          <a href="mailto:info@barrierclean.com" class="contact-value">info@barrierclean.com</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">📍</div>
-        <div>
-          <span class="contact-label">Serving</span>
-          <span class="contact-value">Kiawah · Seabrook · Johns Island · Charleston · Lowcountry</span>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="quote-form-wrap">
@@ -1177,7 +1139,6 @@
             <option value="" disabled selected>Service Needed</option>
             <option>House Washing</option>
             <option>Driveway Cleaning</option>
-            <option>Window Cleaning</option>
             <option>Fence Cleaning</option>
             <option>Gutter Cleaning</option>
             <option>Full-Service Package</option>
@@ -1195,6 +1156,37 @@
       </div>
     </form>
   </div>
+
+  <div class="quote-contact">
+    <div class="contact-item">
+      <div class="contact-icon">📞</div>
+      <div>
+        <span class="contact-label">Phone</span>
+        <a href="tel:+18435801999" class="contact-value">(843) 580-1999</a>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">💬</div>
+      <div>
+        <span class="contact-label">Text</span>
+        <a href="sms:+18435801999" class="contact-value">(843) 580-1999</a>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <span class="contact-label">Email</span>
+        <a href="mailto:info@barrierclean.com" class="contact-value">info@barrierclean.com</a>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📍</div>
+      <div>
+        <span class="contact-label">Serving</span>
+        <span class="contact-value">Kiawah · Seabrook · Johns Island · Charleston · Lowcountry</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- FOOTER -->
@@ -1209,7 +1201,6 @@
       <ul>
         <li><a href="#services">House Washing</a></li>
         <li><a href="#services">Driveway Cleaning</a></li>
-        <li><a href="#services">Window Cleaning</a></li>
         <li><a href="#services">Fence Cleaning</a></li>
         <li><a href="#services">Gutter Cleaning</a></li>
         <li><a href="#quote">Full-Service Package</a></li>
@@ -1227,7 +1218,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 Barrier Island Exterior Cleaning LLC. All rights reserved.</p>
+    <p>© 2026 Barrier Island Exterior Cleaning. All rights reserved.</p>
     <span>Kiawah Island · Seabrook Island · Johns Island · Charleston, SC &nbsp;·&nbsp; <a href="mailto:info@barrierclean.com" style="color:inherit;">info@barrierclean.com</a></span>
   </div>
 </footer>
@@ -1327,7 +1318,7 @@
 </script>
   <div style="background:#060f18; padding: 20px 5%; text-align:center;">
     <p style="font-size:.68rem; color:rgba(255,255,255,.2); line-height:1.9; max-width:900px; margin:0 auto;">
-      Barrier Island Exterior Cleaning proudly serves the entire South Carolina Lowcountry including Charleston, Kiawah Island, Seabrook Island, Johns Island, James Island, Folly Beach, Mount Pleasant, Edisto Island, Wadmalaw Island, West Ashley, Daniel Island, Sullivan's Island, Isle of Palms, Summerville, and surrounding coastal communities. Specializing in soft-wash house washing, driveway cleaning, window cleaning, and gutter cleaning for residential and vacation properties throughout the Charleston metro area and Lowcountry coast.
+      Barrier Island Exterior Cleaning proudly serves the entire South Carolina Lowcountry including Charleston, Kiawah Island, Seabrook Island, Johns Island, James Island, Folly Beach, Mount Pleasant, Edisto Island, Wadmalaw Island, West Ashley, Daniel Island, Sullivan's Island, Isle of Palms, Summerville, and surrounding coastal communities. Specializing in soft-wash house washing, driveway cleaning, fence cleaning, and gutter cleaning for residential and vacation properties throughout the Charleston metro area and Lowcountry coast.
     </p>
   </div>
 </body>
